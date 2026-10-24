@@ -1,0 +1,19 @@
+Oct 24 08:01:12 server sshd[1021]: Failed password for root from 203.0.113.50 port 51122 ssh2
+Oct 24 08:01:15 server sshd[1021]: Failed password for root from 203.0.113.50 port 51124 ssh2
+Oct 24 08:01:19 server sshd[1023]: Failed password for admin from 203.0.113.50 port 51130 ssh2
+Oct 24 08:02:03 server sshd[1030]: Accepted password for alice from 192.168.1.10 port 40222 ssh2
+Oct 24 08:03:44 server sshd[1041]: Failed password for invalid user test from 198.51.100.23 port 60311 ssh2
+Oct 24 08:03:48 server sshd[1041]: Failed password for invalid user test from 198.51.100.23 port 60315 ssh2
+Oct 24 08:05:10 server sshd[1050]: Accepted password for bob from 192.168.1.11 port 40510 ssh2
+Oct 24 08:07:21 server sshd[1062]: Failed password for root from 203.0.113.50 port 51190 ssh2
+Oct 24 08:07:25 server sshd[1062]: Failed password for root from 203.0.113.50 port 51192 ssh2
+Oct 24 08:09:02 server sshd[1070]: Failed password for alice from 192.168.1.10 port 40600 ssh2
+Oct 24 08:10:15 server sshd[1075]: Accepted password for alice from 192.168.1.10 port 40611 ssh2
+Oct 24 08:12:40 server sshd[1080]: Failed password for invalid user oracle from 192.0.2.77 port 33001 ssh2
+Oct 24 08:12:44 server sshd[1080]: Failed password for invalid user oracle from 192.0.2.77 port 33005 ssh2
+Oct 24 08:12:49 server sshd[1080]: Failed password for invalid user ubuntu from 192.0.2.77 port 33009 ssh2
+Oct 24 08:15:30 server sshd[1090]: Accepted password for bob from 192.168.1.11 port 40700 ssh2
+Oct 24 08:16:02 server sudo: alice : TTY=pts/0 ; PWD=/home/alice ; USER=root ; COMMAND=/usr/bin/apt update
+Oct 24 08:20:11 server sshd[1101]: Failed password for root from 203.0.113.50 port 51250 ssh2
+Oct 24 08:20:15 server sshd[1101]: Failed password for root from 203.0.113.50 port 51252 ssh2
+Oct 24 08:25:00 server sshd[1110]: Connection closed by 192.168.1.10 port 40611
