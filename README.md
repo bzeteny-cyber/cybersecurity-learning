@@ -5,4 +5,7 @@ I'm learning the fundamentals of cybersecurity. This repository is where I docum
 ## Currently learning
 - Linux
 - Python
-- Home lab# cybersecurity-learning
+- Home lab
+
+## Projects
+- [Failed Login Analyzer](python/programs/failed-login-analyzer) – counts failed SSH logins and finds the most active IP
