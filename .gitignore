@@ -1,0 +1,7 @@
+report.txt
+*.env
+*.key
+*.pem
+*.vdi
+*.iso
+*.vmdk
