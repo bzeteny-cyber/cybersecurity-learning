@@ -6,6 +6,7 @@ A simple Python script that reads an SSH authentication log and finds failed log
 - Counts all failed login attempts
 - Finds the IP address with the most failed attempts
 - Flags IP addresses that reach a configurable number of failed attempts
+- Saves the results to a `report.txt` file
 
 ## How to run
 Put `analyzer.py` and `sample-auth.log` in the same folder, then run:
@@ -16,6 +17,8 @@ python analyzer.py
 
 The alert threshold is set by the `THRESHOLD` constant at the top of `analyzer.py`.
 
+After running, the results are also saved to `report.txt` in the folder where you ran the script.
+
 ## Example output
 ```
 Most failed attempts: 203.0.113.50 (7 times)
@@ -24,6 +27,8 @@ Suspicious IPs (3+ failed attempts):
 203.0.113.50 (7 times)
 192.0.2.77 (3 times)
 ```
+
+The report contains the same text as the terminal output.
 
 ## Sample data
 `sample-auth.log` is a made-up log file. The IP addresses are either reserved for documentation or private, so they do not belong to real systems.
@@ -36,6 +41,8 @@ Suspicious IPs (3+ failed attempts):
 - Using `with open` so the file is closed automatically
 - Splitting code into functions with `def`, parameters and `return`
 - Using a constant (`THRESHOLD`) and passing it to a function as a parameter
+- Writing to a file with `open` in `"w"` mode and `write()`
+- Using `\n` to add line breaks
 
 ## Known limitations
 - If two IPs have the same highest count, only the first one is shown.
@@ -43,3 +50,5 @@ Suspicious IPs (3+ failed attempts):
   Other log formats will not work.
 - The log file name is hardcoded in the script.
 - The alert threshold is set in the code (`THRESHOLD`) and cannot be changed from the command line.
+- The report file name (`report.txt`) is hardcoded.
+- The report is overwritten every time the script runs.
